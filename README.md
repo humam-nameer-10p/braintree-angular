@@ -7,14 +7,16 @@ Deprecated .success()
 
 ###Example Usage:
 
-#// module
+## Module
 ```
 var name = module.exports = 'app.module';
 angular
   .module(name, [])
-.value('braintreeToken', require('./braintree.value.js'))```
+.value('braintreeToken', require('./braintree.value.js'))
 
-#// Value
+```
+
+## Value
 ```
 var braintreeValue = {
   token: ''
@@ -22,7 +24,7 @@ var braintreeValue = {
 
 module.exports = braintreeValue;
 ```
-#//controller
+## Controller
 ```
  function startup(){
     $braintree.getClientToken().then(function(token){
