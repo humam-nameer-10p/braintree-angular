@@ -1,9 +1,8 @@
 # braintree-angular [![Build Status](https://travis-ci.org/jeffcarp/braintree-angular.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-angular) [![npm version](http://img.shields.io/npm/v/braintree-angular.svg?style=flat)](https://www.npmjs.org/package/braintree-anguar) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-### *------- FORKED FOR -------*
+### *------- FORKED -------*
 ##Reasons:
-forked to allow custom integeration to set client token and remove
-Deprecated .success()
+forked to allow custom integeration to set client token and remove deprecated .success() function
 
 ###Example Usage:
 
