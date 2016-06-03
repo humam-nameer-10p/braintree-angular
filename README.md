@@ -1,20 +1,21 @@
 # braintree-angular [![Build Status](https://travis-ci.org/jeffcarp/braintree-angular.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-angular) [![npm version](http://img.shields.io/npm/v/braintree-angular.svg?style=flat)](https://www.npmjs.org/package/braintree-anguar) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-*------- FORKED -------*
+### *------- FORKED -------*
 ##Reasons:
-forked to allow custom integeration to set client token
-Deprecated .success()
+forked to allow custom integeration to set client token and remove deprecated .success() function
 
 ###Example Usage:
 
-#// module
+## Module
 ```
 var name = module.exports = 'app.module';
 angular
   .module(name, [])
-.value('braintreeToken', require('./braintree.value.js'))```
+.value('braintreeToken', require('./braintree.value.js'))
 
-#// Value
+```
+
+## Value
 ```
 var braintreeValue = {
   token: ''
@@ -22,7 +23,7 @@ var braintreeValue = {
 
 module.exports = braintreeValue;
 ```
-#//controller
+## Controller
 ```
  function startup(){
     $braintree.getClientToken().then(function(token){
